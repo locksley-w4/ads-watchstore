@@ -1,0 +1,13 @@
+.sliderList{
+    max-width: 100%;
+    overflow-x: auto;
+}
+.sliderList::-webkit-scrollbar{
+    display: none;
+}
+ul.sliderList{
+    list-style-type: none;
+    display: flex;
+    width: auto;
+    height: 100%;
+}

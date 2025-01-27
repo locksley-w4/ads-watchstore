@@ -1,0 +1,32 @@
+.searchForm {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+.searchForm button {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  color: rgb(54, 54, 54);
+  transition: .3s transform;
+}
+.searchForm button.clear {
+  opacity: 0; 
+  transform: rotate(-70deg);
+  right: 0;
+  top: 0;
+}
+.searchForm button.clear.active {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.searchForm input {
+  padding-left: 50px;
+}
+

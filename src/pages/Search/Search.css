@@ -1,0 +1,16 @@
+.search-page {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  padding-top: 50px;
+  font-family: "Source Sans 3", serif;
+}
+.search-page h2 {
+    font-size: 2rem;
+    color: rgb(120, 120, 120);
+}
+form.searchForm {
+  width: 100%;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,41 @@
+nav.navbar {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+}
+
+nav.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+li.nav-elem a {
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s all;
+  display: flex;
+  justify-content: center;
+}
+li.nav-elem a.active {
+  bottom: 3px;
+}
+li.nav-elem a.active::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #000;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+}

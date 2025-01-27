@@ -1,0 +1,12 @@
+.customCheckbox {
+  display: inline-block;
+  background-color: rgb(226, 226, 226);
+  border-radius: 15px;
+  padding: 10px 30px;
+  font: 23px "Source Sans 3", serif;
+  font-weight: 400;
+  transition: .3s all;
+}
+.customCheckbox.checked {
+    background-color: var(--primary-color);
+}

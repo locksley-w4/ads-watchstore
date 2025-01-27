@@ -1,0 +1,36 @@
+.filterPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.filterForm {
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  padding: 15px;
+  background-color: #fff;
+}
+.filterForm.active {
+  display: flex;
+}
+.filterPage button.filter-btn {
+  background: var(--primary-color);
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+.filterForm h2 {
+  font: 32px "DM Serif Display", serif;
+}

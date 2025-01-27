@@ -1,0 +1,27 @@
+.homepage-brands {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+.homepage-brands ul {
+  gap: 20px;
+  height: 70px;
+}
+.homepage-brands .brand-elem {
+  display: block;
+  height: 100%;
+  width: 120px;
+  flex: 0 0 120px;
+  padding: 15px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+.homepage-brands .brand-elem img {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}

@@ -1,0 +1,15 @@
+h3.sectionHeader{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--black);
+    font: 500 22px  "DM Serif Display", serif;
+}
+h3.sectionHeader a{
+    margin-left: auto;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Source Sans 3', serif;
+}

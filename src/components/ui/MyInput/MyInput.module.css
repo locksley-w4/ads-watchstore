@@ -1,0 +1,56 @@
+.myInputContainer {
+  flex: 1 1 auto;
+  position: relative;
+  width: 100%;
+}
+.myInputContainer > button {
+  position: absolute;
+  right: 7px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  color: rgb(214, 214, 214);
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  text-shadow: 0 0 3px #7c7c7c64;
+}
+input.myInput {
+  position: relative;
+  padding: 15px 20px;
+  border: 2px solid gainsboro;
+  border-radius: 50px;
+  background-color: #fff;
+  outline: none;
+  font-size: 25px;
+  font-family: "Source Sans 3", serif;
+  box-shadow: 0 10px 50px 0 #c4c4c4;
+  width: 100%;
+  height: 60px;
+  flex: 1;
+  background-color: #ffffff88;
+  backdrop-filter: blur(5px);
+}
+.myInputContainer.labelVisible::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 30px;
+  top: -13px;
+  padding: 3px 10px;
+  /* background: linear-gradient(0deg,#fff 60%, transparent 20%); */
+  background: #ffffff88;
+  border-radius: 10px;
+  font-family: "Source Sans 3", serif;
+  color: rgb(65, 65, 65);
+  z-index: 10;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+/* .myInputContainer label {
+    position: relative;
+    b100
+} */

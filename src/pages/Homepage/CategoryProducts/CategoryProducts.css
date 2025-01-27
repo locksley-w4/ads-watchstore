@@ -1,0 +1,7 @@
+.categoryProducts{
+    width: 100%;
+}
+.categoryProducts .productsContainer ul{
+    gap: 30px;
+    margin-top: 30px;
+}

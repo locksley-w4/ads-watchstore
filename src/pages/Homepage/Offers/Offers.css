@@ -1,0 +1,25 @@
+.homepage-offers {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+.homepage-offers ul{
+    gap: 20px;
+    height: 150px;
+}
+.homepage-offers .offer-elem {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex: 0 0 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.homepage-offers .offer-elem img {
+  display: block;
+  max-width: 120%;
+  min-height: 100%;
+}
