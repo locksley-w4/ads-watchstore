@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/ads-watchstore/static/css/main.ba7b36de.css",
+    "main.js": "/ads-watchstore/static/js/main.d48e7e0c.js",
+    "static/js/488.c278da8c.chunk.js": "/ads-watchstore/static/js/488.c278da8c.chunk.js",
+    "static/media/purepng.com-wrist-band-watchclockbelltimealarmwristbandsilver-1421526465514anrrs.png": "/ads-watchstore/static/media/purepng.com-wrist-band-watchclockbelltimealarmwristbandsilver-1421526465514anrrs.4d5e90dcb0dac12f4543.png",
+    "static/media/signup-pic.png": "/ads-watchstore/static/media/signup-pic.d79ae6db00466b8847ae.png",
+    "static/media/login-pic.webp": "/ads-watchstore/static/media/login-pic.86438a92f06ab7f6d6bf.webp",
+    "static/media/Wrist Band Watch - 480x773.png": "/ads-watchstore/static/media/Wrist Band Watch - 480x773.ab2bc1520f22a8e8c178.png",
+    "static/media/Wrist Band Watch - 480x726.png": "/ads-watchstore/static/media/Wrist Band Watch - 480x726.e43c23aaa291c68446bd.png",
+    "static/media/Men's Wrist Band Watch - 480x799.png": "/ads-watchstore/static/media/Men's Wrist Band Watch - 480x799.6856f8190f8e084126d7.png",
+    "static/media/Men's Wrist Band Watch - 480x674.png": "/ads-watchstore/static/media/Men's Wrist Band Watch - 480x674.34b4ce33f98a07bf339f.png",
+    "static/media/Men's Wrist Band Watch - 480x693.png": "/ads-watchstore/static/media/Men's Wrist Band Watch - 480x693.26704347deee59c3441d.png",
+    "static/media/Men's Wrist Band Watch - 480x600.png": "/ads-watchstore/static/media/Men's Wrist Band Watch - 480x600.141f1048108769e0d1b8.png",
+    "static/media/Rolex Cosmograph Daytona - 481x481.png": "/ads-watchstore/static/media/Rolex Cosmograph Daytona - 481x481.8198566891536d7835de.png",
+    "static/media/offer-banner.jpg": "/ads-watchstore/static/media/offer-banner.ae7d73b4c3ae1a86b0c0.jpg",
+    "static/media/Tissot T-Touch Solar E84 - 640x581.png": "/ads-watchstore/static/media/Tissot T-Touch Solar E84 - 640x581.280191ddded3e41f4a9e.png",
+    "static/media/Realistic-watch-clock-chronograph-stainless-steel-luxury-vector-PNG.png": "/ads-watchstore/static/media/Realistic-watch-clock-chronograph-stainless-steel-luxury-vector-PNG.5695c3fddc3d9b7d0983.png",
+    "static/media/Arcadia Wrist Band Watch - 480x608.png": "/ads-watchstore/static/media/Arcadia Wrist Band Watch - 480x608.c20612ef3b57facff27b.png",
+    "static/media/Women's Wrist Band Watch - 480x480.png": "/ads-watchstore/static/media/Women's Wrist Band Watch - 480x480.d764b8f7893d26048321.png",
+    "static/media/TAG-Heuer-Logo.png": "/ads-watchstore/static/media/TAG-Heuer-Logo.a3a106806ca1b075b026.png",
+    "static/media/Breitling-Logo-1.png": "/ads-watchstore/static/media/Breitling-Logo-1.cfc54ddc7c6069647e15.png",
+    "static/media/offer-banner3.jpg": "/ads-watchstore/static/media/offer-banner3.9223cda9638185d3eaa0.jpg",
+    "static/media/Rolex-Logo.png": "/ads-watchstore/static/media/Rolex-Logo.13baf6018f0e06b0d82b.png",
+    "static/media/Citizen_Watch-Logo.png": "/ads-watchstore/static/media/Citizen_Watch-Logo.eb5a1bc113b283d6a968.png",
+    "static/media/Longines-logo-768x432.png": "/ads-watchstore/static/media/Longines-logo-768x432.1a0864fd02e78be7b50b.png",
+    "static/media/offer-banner1.jpg": "/ads-watchstore/static/media/offer-banner1.07681f8f298ea22d7114.jpg",
+    "static/media/offer-banner2.jpg": "/ads-watchstore/static/media/offer-banner2.c817c2515daf36e06633.jpg",
+    "static/media/Tissot-Logo-768x432.png": "/ads-watchstore/static/media/Tissot-Logo-768x432.6adf0629a69036c5c64c.png",
+    "static/media/Hublot-logo.png": "/ads-watchstore/static/media/Hublot-logo.c796e15572b31a22eba2.png",
+    "static/media/Patek-Philippe-Logo.png": "/ads-watchstore/static/media/Patek-Philippe-Logo.b0b82d19ccb9eb8b7f48.png",
+    "static/media/google-logo.webp": "/ads-watchstore/static/media/google-logo.bfac418d21a6894fe76b.webp",
+    "index.html": "/ads-watchstore/index.html",
+    "main.ba7b36de.css.map": "/ads-watchstore/static/css/main.ba7b36de.css.map",
+    "main.d48e7e0c.js.map": "/ads-watchstore/static/js/main.d48e7e0c.js.map",
+    "488.c278da8c.chunk.js.map": "/ads-watchstore/static/js/488.c278da8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba7b36de.css",
+    "static/js/main.d48e7e0c.js"
+  ]
+}
