@@ -11,6 +11,20 @@ import img13 from "./Women's Wrist Band Watch - 480x480.png";
 import img14 from "./Wrist Band Watch - 480x726.png";
 import img15 from "./Wrist Band Watch - 480x773.png";
 
+export const productPrices = {
+  1: 450,
+  2: 850,
+  3: 230,
+  4: 400,
+  5: 33854,
+  6: 400,
+  7: 1200,
+  8: 15000,
+  9: 950,
+  10: 200,
+  11: 180,
+  12: 1450,
+};
 export const productKeywords = [
   { value: "popular", name: "Popular" },
   { value: "limited-edition", name: "Limited Edition" },

@@ -5,7 +5,7 @@ import "./SearchForm.css";
 const SearchForm = ({ value, setValue, onSubmit, ...props }) => {  
   return (
     <form action="#" className="searchForm" onSubmit={onSubmit}>
-      <button type="submit" disabled={!value}>
+      <button type="submit">
         <i className="fa fa-search"></i>
       </button>
       <MyInput value={value} setValue={setValue} />

@@ -38,7 +38,7 @@ const MyInput = ({
       {showHideBtn ? (
         <button type="button" className={cl.showHideBtn} onClick={toggleType}>
           <i
-            className={`fa ${type === "password" ? "fa-eye" : "fa-eye-slash"}`}
+            className={`fa ${type === "password" ? "fa-eye-slash" : "fa-eye"}`}
           ></i>
         </button>
       ) : null}

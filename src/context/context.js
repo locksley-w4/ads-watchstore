@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { products, productKeywords } from "../components/assets/productsData";
+import { products, productKeywords, productPrices } from "../components/assets/productsData";
 
-export const productContextValue = { totalProducts: products, productKeywords };
+export const productContextValue = { totalProducts: products, productKeywords,productPrices };
 export const ProductsContext = createContext(null);

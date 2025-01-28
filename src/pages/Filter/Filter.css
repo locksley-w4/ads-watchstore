@@ -34,3 +34,6 @@
 .filterForm h2 {
   font: 32px "DM Serif Display", serif;
 }
+.filterPage .collapsed {
+  display: none;
+}

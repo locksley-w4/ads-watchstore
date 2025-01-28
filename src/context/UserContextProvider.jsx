@@ -7,9 +7,30 @@ import React, {
 } from "react";
 import { AuthContext } from "./AuthContextProvider";
 import { compareObjects } from "../utils/utils";
+import { ProductsContext } from "./context";
 
 export const UserContext = createContext();
 
+class Cart {
+  constructor(ordersObj = {}) {
+    this._orders = ordersObj;
+    this.calculateTotal = this.calculateTotal.bind(this);
+  }
+  get orders() {
+    return { ...this._orders };
+  }
+  set orders(val) {
+    this._orders = { ...val } || {};
+  }
+  calculateTotal(ordersObj, productPrices = {}, discount = 0) {    
+    let total = 0;
+    
+    for (const id of Object.keys(ordersObj)) {      
+      total += productPrices[id] * ordersObj[id];
+    }
+    return total * (1 - discount);
+  }
+}
 const UserContextProvider = ({ children }) => {
   const { isAuth, userId } = useContext(AuthContext);
   const [userData, setUserData] = useState({});
@@ -18,7 +39,7 @@ const UserContextProvider = ({ children }) => {
   const [userDataError, setUserDataError] = useState(null);
 
   useEffect(() => {
-    if (!isAuth) {
+    if (!isAuth || !userId) {
       setUserData({});
       setCart(new Cart());
       return;
@@ -29,23 +50,22 @@ const UserContextProvider = ({ children }) => {
       setUserDataError(null);
       try {
         const data = await getUserData(userId);
-        setCart(new Cart(data?.cart || {}));
         setUserData(data);
+        setCart(new Cart(data?.cart || {}));
         setIsLoading(false);
       } catch (error) {
         setUserDataError(error);
         setIsLoading(false);
       }
-
     })();
   }, [isAuth, userId]);
 
   useEffect(() => {
-    if (cart?.orders && userData.cart) handleCartUpdate(cart);
+    if (cart?.orders && userData?.cart) handleCartUpdate(cart);
   }, [cart]);
 
   useEffect(() => {
-    if (!userData.cart || !cart.orders || isLoading) return;
+    if (!userData || !userData.cart || !cart.orders || isLoading) return;
 
     if (!compareObjects(userData?.cart, cart?.orders))
       setCart(new Cart(userData.cart));
@@ -102,23 +122,3 @@ const UserContextProvider = ({ children }) => {
 };
 
 export default UserContextProvider;
-
-class Cart {
-  constructor(ordersObj = {}) {
-    this._orders = ordersObj;
-    this.calculateTotal = this.calculateTotal.bind(this);
-  }
-  get orders() {
-    return { ...this._orders };
-  }
-  set orders(val) {
-    this._orders = { ...val } || {};
-  }
-  calculateTotal(discount = 0) {
-    let total = 0;
-    for (const price of Object.values(this._orders)) {
-      total += price;
-    }
-    return total * (1 - discount);
-  }
-}

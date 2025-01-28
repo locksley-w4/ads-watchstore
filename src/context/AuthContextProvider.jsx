@@ -20,7 +20,8 @@ const AuthContextProvider = ({ children }) => {
 
   useEffect(() => {
     setIsAuth(localStorage.getItem("isAuth") === "true");
-    setId(localStorage.getItem("userId"));
+    const _id = localStorage.getItem("userId");    
+    setId(_id !== "undefined" ? _id : null);
   }, []);
 
   async function logout() {
@@ -37,16 +38,21 @@ const AuthContextProvider = ({ children }) => {
         localStorage.getItem("userCredentials")
       );
       const userData = userCredentials[credit.login];
+      if (!userData)
+        throw new Error("User is not found.");
+
       if (String(userData.password) === String(credit.password)) {
         setIsAuth(true);
         setIsAuthLoading(false);
         setIsAuthError(false);
         setAuthErrorMsg(null);
         localStorage.setItem("isAuth", "true");
-        localStorage.setItem("userId", userCredentials.userId);
-        setId(userData.id);
+        localStorage.setItem("userId", userData.userId);
+        console.log(userData, userCredentials);
+
+        setId(userData.userId);
       } else if (userData) throw new Error("Incorrect password.");
-      else throw new Error("User is not found.");
+      else throw new Error("Authentication error. Please, try again.");
     } catch (er) {
       setIsAuthLoading(false);
       setIsAuthError(true);

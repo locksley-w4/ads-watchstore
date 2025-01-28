@@ -24,8 +24,9 @@ const Profile = () => {
   function handleUpdate() {
     const newUserData = { email, fullName, phoneNumber, password };
     if (compareObjects(userData, newUserData)) return;
-    updateUserData(userData.userId, newUserData);
+    const isSuccess = updateUserData(userData.userId, newUserData); // return true if updated successfully
     setUserData(newUserData);
+    alert(isSuccess ? "Updated Successfully." : "Update error. Please try again.")
   }
 
   return (

@@ -26,7 +26,7 @@ const Search = () => {
           ))}
         </ProductsContainer>
       ) : (
-        <h2>Not found.</h2>
+        <h2>No products</h2>
       )}
     </div>
   );

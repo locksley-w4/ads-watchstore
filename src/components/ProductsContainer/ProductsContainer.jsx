@@ -1,10 +1,12 @@
-import React from 'react'
-import './ProductsContainer.css'
+import React from "react";
+import "./ProductsContainer.css";
 
-const ProductsContainer = (props) => {
+const ProductsContainer = ({className, ...props}) => {
   return (
-    <div {...props} className='productsContainer'>{props.children}</div>
-  )
-}
+    <div className={`productsContainer ${className || ""}`} {...props}>
+      {props.children}
+    </div>
+  );
+};
 
-export default ProductsContainer
+export default ProductsContainer;

@@ -40,7 +40,7 @@ const Filter = (props) => {
         setQuery={setQuery}
       />
       <button className="filter-btn" onClick={() => {setFormVisible(true)}}>Show Form</button>
-      <ProductsContainer>
+      <ProductsContainer className={formVisible ? "collapsed" : ""}>
         {(filteredAndSorted.length ? filteredAndSorted : totalProducts).map(
           (elem, i) => (
             <Product product={elem} key={i} />
