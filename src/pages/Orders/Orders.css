@@ -62,11 +62,12 @@
   max-width: 100%;
   height: 100%;
 }
-.order-card .name {
+.order-card h2.name {
   font: 700 1.4rem "Source Sans 3", serif;
   color: var(--blue);
-  width: 60%;
   flex: 0 0 40px;
+  margin: 0;
+  margin-right:15px;
 }
 .order-card .description {
   width: 50%;
@@ -77,6 +78,8 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   color: var(--black);
+  margin: 0;
+  padding: 0;
 }
 .order-card .price {
   font: 600 1.8rem "DM Serif Display", serif;
@@ -131,4 +134,15 @@
 button.orderBtn {
   margin-top: 40px;
   font-weight: 500;
+}
+@media screen and (max-width: 400px) {
+  .orders-list .order-card .logo {
+    width: 90px;
+  }
+  .order-card h2.name {
+    font-size: 22px;
+  }
+  .order-card .description {
+    width: 40%;
+  }
 }
