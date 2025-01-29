@@ -35,7 +35,7 @@ const AuthContextProvider = ({ children }) => {
       if (!credit.login || !credit.password)
         throw new Error("Enter your login and password.");
       const userCredentials = JSON.parse(
-        localStorage.getItem("userCredentials")
+        localStorage.getItem("userCredentials") || "{}"
       );
       const userData = userCredentials[credit.login];
       if (!userData)
@@ -66,7 +66,7 @@ const AuthContextProvider = ({ children }) => {
       if (!email || !password) throw new Error("Enter new login and password.");
 
       const userCredentials = JSON.parse(
-        localStorage.getItem("userCredentials")
+        localStorage.getItem("userCredentials") || "{}"
       );
       if (!userCredentials[email]) {
         // const crypto = require('crypto');
