@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ads-watchstore/static/css/main.f916847a.css",
-    "main.js": "/ads-watchstore/static/js/main.b0aee926.js",
+    "main.css": "/ads-watchstore/static/css/main.7d3af8a2.css",
+    "main.js": "/ads-watchstore/static/js/main.f676cb90.js",
     "static/js/488.c278da8c.chunk.js": "/ads-watchstore/static/js/488.c278da8c.chunk.js",
     "static/media/purepng.com-wrist-band-watchclockbelltimealarmwristbandsilver-1421526465514anrrs.png": "/ads-watchstore/static/media/purepng.com-wrist-band-watchclockbelltimealarmwristbandsilver-1421526465514anrrs.4d5e90dcb0dac12f4543.png",
     "static/media/signup-pic.png": "/ads-watchstore/static/media/signup-pic.d79ae6db00466b8847ae.png",
@@ -31,12 +31,12 @@
     "static/media/Patek-Philippe-Logo.png": "/ads-watchstore/static/media/Patek-Philippe-Logo.b0b82d19ccb9eb8b7f48.png",
     "static/media/google-logo.webp": "/ads-watchstore/static/media/google-logo.bfac418d21a6894fe76b.webp",
     "index.html": "/ads-watchstore/index.html",
-    "main.f916847a.css.map": "/ads-watchstore/static/css/main.f916847a.css.map",
-    "main.b0aee926.js.map": "/ads-watchstore/static/js/main.b0aee926.js.map",
+    "main.7d3af8a2.css.map": "/ads-watchstore/static/css/main.7d3af8a2.css.map",
+    "main.f676cb90.js.map": "/ads-watchstore/static/js/main.f676cb90.js.map",
     "488.c278da8c.chunk.js.map": "/ads-watchstore/static/js/488.c278da8c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f916847a.css",
-    "static/js/main.b0aee926.js"
+    "static/css/main.7d3af8a2.css",
+    "static/js/main.f676cb90.js"
   ]
 }
