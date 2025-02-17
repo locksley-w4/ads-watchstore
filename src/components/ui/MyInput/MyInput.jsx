@@ -36,7 +36,7 @@ const MyInput = ({
       />
       {children}
       {showHideBtn ? (
-        <button type="button" className={cl.showHideBtn} onClick={toggleType}>
+        <button type="button"className={cl.showHideBtn} onClick={toggleType} tabIndex="-1" >
           <i
             className={`fa ${type === "password" ? "fa-eye-slash" : "fa-eye"}`}
           ></i>

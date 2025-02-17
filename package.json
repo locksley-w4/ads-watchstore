@@ -1,7 +1,7 @@
 {
   "name": "watch-store",
   "version": "0.1.0",
-  "homepage": "https://locksley-w4.github.io/ads-watchstore",
+  "homepage": "https://locksley-w4.github.io/ads-watchstore/",
   "private": true,
   "dependencies": {
     "animejs": "^3.2.2",

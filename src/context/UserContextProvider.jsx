@@ -49,7 +49,7 @@ const UserContextProvider = ({ children }) => {
       setIsLoading(true);
       setUserDataError(null);
       try {
-        const data = await getUserData(userId);
+        const data = await getUserData(userId);        
         setUserData(data);
         setCart(new Cart(data?.cart || {}));
         setIsLoading(false);

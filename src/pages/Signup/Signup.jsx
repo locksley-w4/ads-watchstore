@@ -48,7 +48,7 @@ const Signup = () => {
           <div className="logo-container">
             <img src={logo ?? null} alt="" />
           </div>
-          <h1>Let's Sign in</h1>
+          <h1>Let's Sign up</h1>
           <h3>Fill the details below to continue</h3>
           <MyInput
             label="Email"
@@ -57,7 +57,7 @@ const Signup = () => {
             setValue={setEmail}
             required
           >
-            <button type="button">
+            <button type="button" tabIndex="-1">
               <i className="fa fa-user" />
             </button>
           </MyInput>
@@ -67,7 +67,7 @@ const Signup = () => {
             setValue={setFullName}
             required
           >
-            <button type="button">
+            <button type="button" tabIndex="-1">
               <i className="fa fa-envelope" />
             </button>
           </MyInput>
@@ -76,7 +76,7 @@ const Signup = () => {
             value={phoneNumber}
             setValue={setPhoneNumber}
           >
-            <button type="button">
+            <button type="button" tabIndex="-1">
               <i className="fa fa-phone" />
             </button>
           </MyInput>

@@ -38,7 +38,6 @@ const Login = () => {
 
   return (
     <div className="login-page">
-      {isAuth ? "qwewqeqd" : ""}
       <div className="bg-pic">
         <img src={bgPic ?? null} alt="Background picture" />
       </div>
@@ -56,7 +55,7 @@ const Login = () => {
             required
             className="login__input"
           >
-            <button type="button">
+            <button type="button" tabIndex="-1">
               <i className="fa fa-envelope" />
             </button>
           </MyInput>
@@ -90,7 +89,7 @@ const Login = () => {
             <img src={googleLogo} alt="Google" className="btnIcon" />
             <span>Sign in with google</span>
           </button>
-          <Link to={"/signup"} className="signupLink">
+          <Link to={"/signup"} className="signupLinkBottom">
             New to ADS Watch? <strong>Sign up</strong>
           </Link>
           <Link to={"/"}>

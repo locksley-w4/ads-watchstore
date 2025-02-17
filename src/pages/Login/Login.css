@@ -25,6 +25,7 @@
 .bg-pic img {
   max-height: 100%;
 }
+
 .login-box h1 {
   color: var(--blue);
   flex: 1 1 100%;
@@ -46,11 +47,19 @@
   object-fit: contain;
 }
 .login-page p.error {
-    font-size: 1.4rem;
-    color: red;
-    padding-left: 10px;
-    font-weight: 500;
+  font-size: 1.4rem;
+  color: rgb(221, 74, 10);
+  padding-left: 10px;
+  font-weight: 500;
 }
+.login-page a.signupLink {
+  text-decoration: underline;
+}
+.login-page a.signupLinkBottom {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
 .login__input {
   border-radius: 20px !important;
   margin-bottom: 10px;

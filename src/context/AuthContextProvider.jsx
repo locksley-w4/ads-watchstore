@@ -20,7 +20,7 @@ const AuthContextProvider = ({ children }) => {
 
   useEffect(() => {
     setIsAuth(localStorage.getItem("isAuth") === "true");
-    const _id = localStorage.getItem("userId");    
+    const _id = localStorage.getItem("userId");
     setId(_id !== "undefined" ? _id : null);
   }, []);
 
@@ -35,9 +35,12 @@ const AuthContextProvider = ({ children }) => {
       if (!credit.login || !credit.password)
         throw new Error("Enter your login and password.");
       const userCredentials = JSON.parse(
-        localStorage.getItem("userCredentials") || "{}"
+        localStorage.getItem("userCredentials")
       );
-      const userData = userCredentials[credit.login];
+      if(!userCredentials) {
+        localStorage.setItem("userCredentials", "{}");
+      }
+      const userData = userCredentials?.[credit.login];
       if (!userData)
         throw new Error("User is not found.");
 
@@ -48,8 +51,6 @@ const AuthContextProvider = ({ children }) => {
         setAuthErrorMsg(null);
         localStorage.setItem("isAuth", "true");
         localStorage.setItem("userId", userData.userId);
-        console.log(userData, userCredentials);
-
         setId(userData.userId);
       } else if (userData) throw new Error("Incorrect password.");
       else throw new Error("Authentication error. Please, try again.");
@@ -83,7 +84,7 @@ const AuthContextProvider = ({ children }) => {
         localStorage.setItem("isAuth", "true");
         localStorage.setItem("userId", userId);
         const userData = { userId, email, password, fullName, phoneNumber, cart: [] };
-        const users = JSON.parse(localStorage.getItem("usersData"));
+        const users = JSON.parse(localStorage.getItem("usersData") || "{}");
         users[userId] = userData;
         setId(userId);
         localStorage.setItem("usersData", JSON.stringify(users));
